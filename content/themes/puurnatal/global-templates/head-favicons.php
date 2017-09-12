@@ -1,0 +1,5 @@
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicons/Puur-Natal-favicon-16x16.png" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicons/Puur-Natal-apple-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicons/Puur-Natal-apple-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicons/Puur-Natal-apple-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicons/Puur-Natal-apple-icon-144x144.png">
