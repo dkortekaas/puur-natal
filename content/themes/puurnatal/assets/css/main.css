@@ -22696,7 +22696,8 @@ body #wrapper {
   margin-bottom: 0; }
 
 .width-100 .puur-fullwidth.parallax-img {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  position: relative; }
 
 .tfs-slider.flexslider {
   left: 240px;
