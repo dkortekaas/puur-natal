@@ -7828,3 +7828,22 @@ jQuery(document).ready(function(){
     var mainwidth = jQuery('.main-flex').width();
     jQuery('.tfs-slider.flexslider').css('max-width', jQuery('.main-flex').width());    
 });
+
+// CF7 Redirects
+document.addEventListener( 'wpcf7submit', function( event ) {
+    if ( '14194' == event.detail.contactFormId ) { // CF7 Contactformulier - 14194
+		location = 'https://puurnatal.nl/contactformulier-verzonden/';
+	}
+	if ( '14241' == event.detail.contactFormId ) { // CF7 Zwangerschap - 14241
+		location = 'https://puurnatal.nl/zwangerschap-aangemeld/';
+	}
+	if ( '14238' == event.detail.contactFormId ) { // CF7 Nazorg - 14238
+		location = 'https://puurnatal.nl/nazorg-aangemeld/';
+	}
+	if ( '14234' == event.detail.contactFormId ) { // CF7 Kinderwens - 14234
+		location = 'https://puurnatal.nl/kinderwensspreekuur-aangemeld/';
+	}
+	if ( '14231' == event.detail.contactFormId ) { // CF7 Kennismakingsgesprek - 14231
+		location = 'https://puurnatal.nl/kennismakingsgesprek-aangemeld/';
+	}
+}, false );
