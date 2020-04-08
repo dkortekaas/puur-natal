@@ -795,3 +795,24 @@ body #wrapper {
         }
     }
 }
+
+.wpml-ls-legacy-list-horizontal {
+    text-align: center;
+  }
+  .wpml-ls-current-language {
+    opacity: 0.5;
+  }
+  .wpml-ls-item-nl a:before {
+      content:'';
+      background-image: url('https://puurnatal.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/nl.png');
+      height: 12px;
+      width: 18px;
+      display: block;
+  }
+  .wpml-ls-item-en a:before {
+      content:'';
+      background-image: url('https://puurnatal.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png');
+      height: 12px;
+      width: 18px;
+      display: block;
+  }

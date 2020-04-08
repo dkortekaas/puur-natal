@@ -79,10 +79,10 @@ $container = get_theme_mod( 'wbase_container_type' );
                     </nav>
                     <div class="puur-mobile-menu-icons">
 						<a href="#" class="puur-icon puur-icon-bars"></a>
+						<?php do_action('icl_language_selector'); ?>
 					</div>
 
 					<nav class="puur-mobile-nav-holder"></nav>
-
 				</div>
 
                 <div class="side-header-content side-header-content-1-2">
