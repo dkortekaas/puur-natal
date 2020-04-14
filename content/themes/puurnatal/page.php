@@ -128,7 +128,7 @@ $remove[] = "#8217;";
 				if ( get_the_title() == 'Locatie'  ) :
 					$column = 'puur-two-third';
 				elseif ( $thumb_id ) :
-					$thumb_url = wp_get_attachment_image_src($thumb_id, 'home-img', true)[0];
+					$thumb_url = wp_get_attachment_image_src($thumb_id, 'full', true)[0];
 					$thumb_title = get_post($thumb_id)->post_title;
 					$column = 'puur-two-third';
 				endif;
