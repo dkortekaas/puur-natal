@@ -59,7 +59,7 @@ get_header(); ?>
 							<div class="puur-layout-column puur_builder_column puur_builder_column_1_3  puur-one-third puur-column-last 1_3 layout-image">
 								<?php 				
 									$thumb_id = get_post_thumbnail_id();
-									$thumb_url = wp_get_attachment_image_src($thumb_id, 'home-img', true)[0];
+									$thumb_url = wp_get_attachment_image_src($thumb_id, 'full', true)[0];
 									$thumb_title = get_post(get_post_thumbnail_id())->post_title;
 								?>
 								<div title="<?php echo $thumb_title; ?>" class="puur-column-wrapper eq-block" style="background-image: url('<?php echo $thumb_url; ?>');" data-bg-url="<?php echo $thumb_url; ?>">
