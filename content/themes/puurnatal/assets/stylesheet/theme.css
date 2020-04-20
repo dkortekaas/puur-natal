@@ -27952,9 +27952,13 @@ body #wrapper {
 
 /* Page/Post */
 .page .puur_builder_column_2_3 .puur-column-wrapper,
+.page .puur_builder_column_3_5 .puur-column-wrapper,
 .post .puur_builder_column_2_3 .puur-column-wrapper,
+.post .puur_builder_column_3_5 .puur-column-wrapper,
 .blog .puur_builder_column_2_3 .puur-column-wrapper,
-.single .puur_builder_column_2_3 .puur-column-wrapper {
+.blog .puur_builder_column_3_5 .puur-column-wrapper,
+.single .puur_builder_column_2_3 .puur-column-wrapper,
+.single .puur_builder_column_3_5 .puur-column-wrapper {
   padding: 80px 100px 100px 100px;
   height: auto;
   visibility: visible;
@@ -27962,17 +27966,25 @@ body #wrapper {
 }
 
 .page .puur_builder_column_2_3 .puur-column-wrapper h1,
+.page .puur_builder_column_3_5 .puur-column-wrapper h1,
 .post .puur_builder_column_2_3 .puur-column-wrapper h1,
+.post .puur_builder_column_3_5 .puur-column-wrapper h1,
 .blog .puur_builder_column_2_3 .puur-column-wrapper h1,
-.single .puur_builder_column_2_3 .puur-column-wrapper h1 {
+.blog .puur_builder_column_3_5 .puur-column-wrapper h1,
+.single .puur_builder_column_2_3 .puur-column-wrapper h1,
+.single .puur_builder_column_3_5 .puur-column-wrapper h1 {
   font-size: 40px;
   color: #d36e70 !important;
 }
 
 .page .puur_builder_column_2_3 .puur-column-wrapper h2,
+.page .puur_builder_column_3_5 .puur-column-wrapper h2,
 .post .puur_builder_column_2_3 .puur-column-wrapper h2,
+.post .puur_builder_column_3_5 .puur-column-wrapper h2,
 .blog .puur_builder_column_2_3 .puur-column-wrapper h2,
-.single .puur_builder_column_2_3 .puur-column-wrapper h2 {
+.blog .puur_builder_column_3_5 .puur-column-wrapper h2,
+.single .puur_builder_column_2_3 .puur-column-wrapper h2,
+.single .puur_builder_column_3_5 .puur-column-wrapper h2 {
   color: #d36e70 !important;
 }
 
@@ -28123,7 +28135,8 @@ body #wrapper {
 }
 
 /* Links */
-.links .puur_builder_column_2_3 .puur-column-wrapper {
+.links .puur_builder_column_2_3 .puur-column-wrapper,
+.links .puur_builder_column_3_5 .puur-column-wrapper {
   padding-top: 5%;
   padding-right: 10%;
   padding-bottom: 5%;
@@ -28191,7 +28204,8 @@ body #wrapper {
   color: #d36e70;
 }
 
-.search-results .puur_builder_column_2_3 .puur-column-wrapper {
+.search-results .puur_builder_column_2_3 .puur-column-wrapper,
+.search-results .puur_builder_column_3_5 .puur-column-wrapper {
   padding: 5% 10%;
 }
 
@@ -28365,7 +28379,15 @@ body #wrapper {
   font-size: 22px;
 }
 
-.wpml-ls-item-nl:before {
+.wpml-ls-legacy-list-horizontal {
+  text-align: center;
+}
+
+.wpml-ls-current-language {
+  opacity: 0.5;
+}
+
+.wpml-ls-item-nl a:before {
   content: '';
   background-image: url("https://puurnatal.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/nl.png");
   height: 12px;
@@ -28373,7 +28395,7 @@ body #wrapper {
   display: block;
 }
 
-.wpml-ls-item-en:before {
+.wpml-ls-item-en a:before {
   content: '';
   background-image: url("https://puurnatal.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png");
   height: 12px;

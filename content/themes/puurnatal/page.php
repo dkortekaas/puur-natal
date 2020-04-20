@@ -37,7 +37,7 @@ $remove[] = "#8217;";
 			if( !empty($thumb_id) ):
 				$thumb_url = wp_get_attachment_image_src($thumb_id, 'home-img', true)[0];
 				$thumb_title = get_post($thumb_id)->post_title;
-				$column = 'puur-two-third';
+				$column = 'puur-three-fifth';
 			endif;	
 		endif;
 		$floatclass = $imgparal = $large = $thumb_id = '';	
@@ -59,7 +59,7 @@ $remove[] = "#8217;";
 
 		<article id="<?php echo strtolower(str_replace( $remove, "", get_the_title())); ?>" class="<?php echo $imgparal; ?>puur-fullwidth fullwidth-box hundred-percent-fullwidth puur-equal-height-columns<?php echo $floatclass; ?>">
 			<div class="puur-builder-row puur-row equal">
-				<div class="puur-layout-column puur_builder_column puur_builder_column_2_3 puur-column-first 2_3 layout-content eq-block <?php echo $column; ?>">
+				<div class="puur-layout-column puur_builder_column puur_builder_column_3_5 puur-column-first 3_5 layout-content eq-block <?php echo $column; ?>">
 					<div class="puur-column-wrapper puur-animated" data-animationtype="fadeInUp" data-animationduration="1" data-animationoffset="50%" data-bg-url="">
 						<div class="puur-column-table">
 							<div class="puur-column-tablecell">
@@ -77,7 +77,7 @@ $remove[] = "#8217;";
 				<?php 
 				if (get_field('hide_thumbnail') != 1) :
 				if( !empty($thumb_id) ): ?>
-				<div class="puur-layout-column puur_builder_column puur_builder_column_1_3 puur-one-third puur-column-last puur-no-small-visibility 1_3 layout-image">
+				<div class="puur-layout-column puur_builder_column puur_builder_column_2_5 puur-two-fifth puur-column-last puur-no-small-visibility 2_5 layout-image">
 					<div title="<?php echo $thumb_title; ?>" class="puur-column-wrapper eq-block" style="background-image: url('<?php echo $thumb_url; ?>');" data-bg-url="<?php echo $url; ?>">
 						<div class="puur-column-table">
 							<div class="puur-column-tablecell"></div>
@@ -126,18 +126,18 @@ $remove[] = "#8217;";
 			if (get_field('hide_thumbnail') != 1) :
 				$thumb_id = get_post_thumbnail_id();
 				if ( get_the_title() == 'Locatie'  ) :
-					$column = 'puur-two-third';
+					$column = 'puur-three-fifth';
 				elseif ( $thumb_id ) :
 					$thumb_url = wp_get_attachment_image_src($thumb_id, 'full', true)[0];
 					$thumb_title = get_post($thumb_id)->post_title;
-					$column = 'puur-two-third';
+					$column = 'puur-three-fifth';
 				endif;
 			endif;
 	?>
 
 	<article id="<?php echo strtolower(str_replace( $remove, "", get_the_title())); ?>" class="<?php echo $imgparal; ?>puur-fullwidth fullwidth-box hundred-percent-fullwidth puur-equal-height-columns<?php echo $floatclass; ?>">
 		<div class="puur-builder-row puur-row equal">
-			<div class="puur-layout-column puur_builder_column puur_builder_column_2_3 puur-column-first 2_3 layout-content eq-block <?php echo $column; ?>">
+			<div class="puur-layout-column puur_builder_column puur_builder_column_3_5 puur-column-first 3_5 layout-content eq-block <?php echo $column; ?>">
 				<div class="puur-column-wrapper puur-animated" data-animationtype="fadeInUp" data-animationduration="1" data-animationoffset="50%" data-bg-url="">
 					<div class="puur-column-table">
 						<div class="puur-column-tablecell">
@@ -214,7 +214,7 @@ $remove[] = "#8217;";
 			</div>
 
 			<?php if ( get_the_title() == 'Locatie'  || get_the_title() == 'Location' ) : ?>
-			<div class="puur-layout-column puur_builder_column puur_builder_column_1_3 puur-one-third puur-column-last puur-no-small-visibility 1_3 layout-image">
+			<div class="puur-layout-column puur_builder_column puur_builder_column_2_5 puur-two-fifth puur-column-last puur-no-small-visibility 2_5 layout-image">
 				<div title="<?php echo $thumb_title; ?>" class="puur-column-wrapper eq-block">
 					<div class="puur-column-table">
 						<div class="puur-column-tablecell">
@@ -226,7 +226,7 @@ $remove[] = "#8217;";
 			</div>
 			<?php elseif (get_field('hide_thumbnail') != 1) :
 			if  ( $thumb_id ) : ?>
-			<div title="<?php echo $thumb_title; ?>" class="puur-layout-column puur_builder_column puur_builder_column_1_3 puur-one-third puur-column-last puur-no-small-visibility 1_3 layout-image">
+			<div title="<?php echo $thumb_title; ?>" class="puur-layout-column puur_builder_column puur_builder_column_1_3 puur-two-fifth puur-column-last puur-no-small-visibility 1_3 layout-image">
 				<div class="puur-column-wrapper eq-block" style="background-image: url('<?php echo $thumb_url; ?>');" data-bg-url="<?php echo $url; ?>">
 					<div class="puur-column-table">
 						<div class="puur-column-tablecell"></div>

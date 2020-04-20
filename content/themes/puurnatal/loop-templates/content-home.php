@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 	<div id="<?php echo strtolower(str_replace(' ', '', get_the_title())); ?>" class="puur-fullwidth fullwidth-box hundred-percent-fullwidth puur-equal-height-columns<?php echo $floatclass; ?>">
 		<div class="puur-builder-row puur-row equal">
-			<div class="puur-layout-column puur_builder_column puur_builder_column_2_3  puur-two-third puur-column-first 2_3 layout-content eq-block">
+			<div class="puur-layout-column puur_builder_column puur_builder_column_2_3  puur-three-fifth puur-column-first 2_3 layout-content eq-block">
 				<div class="puur-column-wrapper puur-animated" data-animationtype="fadeInUp" data-animationduration="1" data-animationoffset="50%" data-bg-url="">
 					<div class="puur-column-table">
 						<div class="puur-column-tablecell">
@@ -59,7 +59,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				</div>
 			</div>
 			
-			<div class="puur-layout-column puur_builder_column puur_builder_column_1_3  puur-one-third puur-column-last 1_3 layout-image">
+			<div class="puur-layout-column puur_builder_column puur_builder_column_1_3  puur-two-fifth puur-column-last 1_3 layout-image">
 				<?php 				
 					$thumb_id = get_post_thumbnail_id();
 					$thumb_url = wp_get_attachment_image_src($thumb_id, 'full', true)[0];
@@ -91,7 +91,7 @@ $floatblog = ($floatclass == ' right') ? ' left' : ' right';
 <article>
 	<div id="<?php echo strtolower(str_replace(' ', '', $recent["post_title"])); ?>" class="post-content puur-fullwidth fullwidth-box hundred-percent-fullwidth puur-equal-height-columns<?php echo $floatblog; ?>">
 		<div class="puur-builder-row puur-row equal">
-			<div class="puur-layout-column puur_builder_column puur_builder_column_2_3  puur-two-third puur-column-first 2_3 layout-content eq-block">
+			<div class="puur-layout-column puur_builder_column puur_builder_column_2_3  puur-three-fifth puur-column-first 2_3 layout-content eq-block">
 				<div class="puur-column-wrapper puur-animated" data-animationtype="fadeInUp" data-animationduration="1" data-animationoffset="50%" data-bg-url="">
 					<div class="puur-column-table">
 						<div class="puur-column-tablecell">
@@ -113,7 +113,7 @@ $floatblog = ($floatclass == ' right') ? ' left' : ' right';
 				<div class="puur-clearfix"></div>
 			</div>
 		
-			<div class="puur-layout-column puur_builder_column puur_builder_column_1_3  puur-one-third puur-column-last 1_3 layout-image">
+			<div class="puur-layout-column puur_builder_column puur_builder_column_1_3  puur-two-fifth puur-column-last 1_3 layout-image">
 				<?php 				
 					$thumb_url = get_the_post_thumbnail_url($recent["ID"], 'home-img', true);
 				?>

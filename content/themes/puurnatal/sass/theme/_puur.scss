@@ -359,7 +359,8 @@ body #wrapper {
 .post,
 .blog,
 .single {
-    .puur_builder_column_2_3 {
+    .puur_builder_column_2_3,
+    .puur_builder_column_3_5 {
         .puur-column-wrapper {
             padding: 80px 100px 100px 100px;
             height: auto;
@@ -520,7 +521,8 @@ body #wrapper {
 /* Links */
 
 .links {
-    .puur_builder_column_2_3 {
+    .puur_builder_column_2_3,
+    .puur_builder_column_3_5 {
         .puur-column-wrapper {
             padding-top: 5%;
             padding-right: 10%;
@@ -601,7 +603,8 @@ body #wrapper {
             color: $pink;
         }
     }
-    .puur_builder_column_2_3 {
+    .puur_builder_column_2_3,
+    .puur_builder_column_3_5 {
         .puur-column-wrapper {
             padding: 5% 10%;
         }
