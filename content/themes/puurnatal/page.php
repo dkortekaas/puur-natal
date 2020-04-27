@@ -56,7 +56,6 @@ $remove[] = "#8217;";
 	<?php if ((strtolower(get_the_title()) == 'de verloskundigenpraktijk' ) || (strtolower(get_the_title()) == 'aanmelden' )) :
 		$maintitle = get_the_title();
 	else : ?>
-
 		<article id="<?php echo strtolower(str_replace( $remove, "", get_the_title())); ?>" class="<?php echo $imgparal; ?>puur-fullwidth fullwidth-box hundred-percent-fullwidth puur-equal-height-columns<?php echo $floatclass; ?>">
 			<div class="puur-builder-row puur-row equal">
 				<div class="puur-layout-column puur_builder_column puur_builder_column_3_5 puur-column-first 3_5 layout-content eq-block <?php echo $column; ?>">
@@ -108,7 +107,7 @@ $remove[] = "#8217;";
 
 	if( $children ):
 		$counter = 1;
-		$floatclass = $imgparal = $large = $thumb_id = '';	
+		$floatclass = $imgparal = $thumbparal = $thumbparal_url = $large = $thumb_id = '';	
 		$size = 'large';
 		foreach( $children as $post ) : setup_postdata( $post ); 
 			$column = 'puur-three-third';
@@ -124,17 +123,29 @@ $remove[] = "#8217;";
 			endif;
 
 			if (get_field('hide_thumbnail') != 1) :
-				$thumb_id = get_post_thumbnail_id();
-				if ( get_the_title() == 'Locatie'  ) :
-					$column = 'puur-three-fifth';
-				elseif ( $thumb_id ) :
-					$thumb_url = wp_get_attachment_image_src($thumb_id, 'full', true)[0];
+				if (get_field('use_thumbnail_as_parallax') == 1) :
+					$thumb_id = get_post_thumbnail_id();
+					$thumbparal_url = wp_get_attachment_image_src($thumb_id, 'large', true)[0];
 					$thumb_title = get_post($thumb_id)->post_title;
-					$column = 'puur-three-fifth';
+					$thumbparal = 'parallax-img ';
+				else :
+					$thumb_id = get_post_thumbnail_id();
+					if ( get_the_title() == 'Locatie'  ) :
+						$column = 'puur-three-fifth';
+					elseif ( $thumb_id ) :
+						$thumb_url = wp_get_attachment_image_src($thumb_id, 'full', true)[0];
+						$thumb_title = get_post($thumb_id)->post_title;
+						$column = 'puur-three-fifth';
+					endif;
 				endif;
 			endif;
 	?>
-
+	
+	<?php if( !empty($thumbparal_url) ): ?>
+	<div title="<?php echo $thumb_title; ?>" class="<?php echo $thumbparal; ?>puur-fullwidth fullwidth-box puur-parallax-fixed nonhundred-percent-fullwidth" style="background-image: url('<?php echo $thumbparal_url; ?>');">
+		<div class="puur-builder-row puur-row"></div>
+	</div>
+	<?php endif; ?>	
 	<article id="<?php echo strtolower(str_replace( $remove, "", get_the_title())); ?>" class="<?php echo $imgparal; ?>puur-fullwidth fullwidth-box hundred-percent-fullwidth puur-equal-height-columns<?php echo $floatclass; ?>">
 		<div class="puur-builder-row puur-row equal">
 			<div class="puur-layout-column puur_builder_column puur_builder_column_3_5 puur-column-first 3_5 layout-content eq-block <?php echo $column; ?>">
